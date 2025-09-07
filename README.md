@@ -102,3 +102,43 @@ c. **NOT NULL**<br>
 d. **DEFAULT** <br>
 - columns take an additional argument that will be the assumed value for an inserted row if the new row does not specify a value for that olumn <br>
 
+
+## KEYWORDS
+i. **AS** <br>
+- to rename a column or table using an alias<br>
+- name can be anything as long as it is inside of single quotes <br>
+- the columns are not being renamed in the table, but the aliases only appear in the result <br>
+- it is not necessary to surround aliases with single quotes <br>
+```sql
+SELECT imdb_rating AS IMDb
+FROM movies;
+```
+
+ii. **DISTINCT** <br>
+- to return unique values in the output <br>
+- it filters out all duplicate values in the specified column(s) <br>
+```sql
+SELECT DISTINCT year
+FROM movies;
+```
+
+iii. **WHERE** <br>
+- to restrict query results in order to obtain only the information needed <br>
+- filters the result set to only include rows where the following condition is true <br>
+- comparison operators used with WHERE clause: <br>
+&emsp;= equal to
+&emsp;!= not equal to
+&emsp;> greater than
+&emsp;< less than
+&emsp;>= greater than or equal to
+&emsp;<= less than or equal to
+```sql
+SELECT *
+FROM movies
+WHERE imdb_rating < 5;
+```
+
+iv. **LIKE** <br>
+- to compare similar values <br>
+- 
+
