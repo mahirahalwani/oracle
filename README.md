@@ -48,8 +48,8 @@ CREATE TABLE celebs (
 - to insert a new row into a table <br>
 - (id, name, age) is a parameter identifying the columns that data will be inserted into <br>
 ```sql
-INSERT INTO celebs (id, name, age) <br>
-VALUES (1, 'Justin Bieber', 29);<br>
+INSERT INTO celebs (id, name, age)
+VALUES (1, 'Justin Bieber', 29);
 ```
 
 3. **SELECT** <br>
@@ -64,8 +64,8 @@ SELECT * FROM celebs;
 - to add a new column to a table <br>
 - can be used to add columns to a table <br>
 ```sql
-ALTER TABLE celebs <br>
-ADD COLUMN twitter_handle TEXT; <br>
+ALTER TABLE celebs
+ADD COLUMN twitter_handle TEXT;
 ```
 
 5. **UPDATE** <br>
@@ -80,7 +80,7 @@ WHERE id = 4;
 - a clause that idicates which row(s) to update with the new column value <br>
 
 7. **DELETE** <br>
-- to delete one or more rows from a table ,br>
+- to delete one or more rows from a table <br>
 ```sql
 DELETE FROM celebs
 WHERE twitter_handle IS NULL;
