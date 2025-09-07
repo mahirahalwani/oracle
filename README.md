@@ -37,11 +37,12 @@
 1. **CREATE** <br>
 - to create a new table in the database <br>
 ``` sql
-CREATE TABLE celebs (<br>
-	id INTEGER,<br>
-	name TEXT,<br>
-	age INTEGER<br>
-);<br>
+CREATE TABLE celebs (
+	id INTEGER,
+	name TEXT,
+	age INTEGER
+);
+```
 
 2. **INSERT** <br>
 - to insert a new row into a table <br>
