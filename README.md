@@ -37,11 +37,11 @@
 1. **CREATE** <br>
 - to create a new table in the database <br>
 ``` example
-&nbsp;&nbsp;&nbsp;&nbsp;CREATE TABLE celebs (<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	id INTEGER,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	name TEXT,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;	age INTEGER<br>
-&nbsp;&nbsp;&nbsp;&nbsp;);<br>
+// CREATE TABLE celebs (<br>
+// id INTEGER,<br>
+// name TEXT,<br>
+// age INTEGER<br>
+// );<br>
 
 2. **INSERT** <br>
 - to insert a new row into a table <br>
