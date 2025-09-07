@@ -47,38 +47,58 @@ CREATE TABLE celebs (
 2. **INSERT** <br>
 - to insert a new row into a table <br>
 - (id, name, age) is a parameter identifying the columns that data will be inserted into <br>
-&nbsp;&nbsp;&nbsp;&nbsp;INSERT INTO celebs (id, name, age) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;VALUES (1, 'Justin Bieber', 29);<br>
+```sql
+INSERT INTO celebs (id, name, age) <br>
+VALUES (1, 'Justin Bieber', 29);<br>
+```
 
 3. **SELECT** <br>
 - to fetch data from a database <br>
 - * is a special wildcard character that allows to select every column in a table without having to name each one individually <br>
 - always return a new table called _result set_ <br>
-&nbsp;&nbsp;&nbsp;&nbsp;SELECT * FROM celebs;
+```sql
+SELECT * FROM celebs;
+```
 
 4. **ALTER** <br>
 - to add a new column to a table <br>
 - can be used to add columns to a table <br>
-&nbsp;&nbsp;&nbsp;&nbsp;ALTER TABLE celebs <br>
-&nbsp;&nbsp;&nbsp;&nbsp;ADD COLUMN twitter_handle TEXT; <br>
+```sql
+ALTER TABLE celebs <br>
+ADD COLUMN twitter_handle TEXT; <br>
+```
 
 5. **UPDATE** <br>
 - to edit a row in a table <br>
-&nbsp;&nbsp;&nbsp;&nbsp;UPDATE celebs
-&nbsp;&nbsp;&nbsp;&nbsp;SET twitter_handle = '@taylorswift13'
-&nbsp;&nbsp;&nbsp;&nbsp;WHERE id = 4;
+```sql
+UPDATE celebs
+SET twitter_handle = '@taylorswift13'
+WHERE id = 4;
+```
 
 6. **WHERE** <br>
 - a clause that idicates which row(s) to update with the new column value <br>
 
-
 7. **DELETE** <br>
 - to delete one or more rows from a table ,br>
-&nbsp;&nbsp;&nbsp;&nbsp;DELETE FROM celebs
-&nbsp;&nbsp;&nbsp;&nbsp;WHERE twitter_handle IS NULL;
-
-8. **IS NULL** <br>
-- a condition in SQL that returns true when the value is NULL and false otherwise <br>
+```sql
+DELETE FROM celebs
+WHERE twitter_handle IS NULL;
+```
 
 
 ## CONSTRAINTS
+a. **PRIMARY KEY**<br>
+- can be used to uniquely identify the row <br>
+- attempts to insert a row with an identical value to a row already in the table will result in a _constraint violation_ which will not allow inserting the new row <br>
+
+b. **UNIQUE**<br>
+- columns have a different value for every row <br>
+- similar to PRIMARY KEY except a table can have many different UNIQUE columns <br>
+
+c. **NOT NULL**<br>
+- columns must have a value <br>
+
+d. **DEFAULT** <br>
+- columns take an additional argument that will be the assumed value for an inserted row if the new row does not specify a value for that olumn <br>
+
