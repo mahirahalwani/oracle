@@ -36,6 +36,7 @@
 ## MANIPULATION
 1. **CREATE** <br>
 - to create a new table in the database <br>
+``` example
 &nbsp;&nbsp;&nbsp;&nbsp;CREATE TABLE celebs (<br>
 &nbsp;&nbsp;&nbsp;&nbsp;	id INTEGER,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;	name TEXT,<br>
